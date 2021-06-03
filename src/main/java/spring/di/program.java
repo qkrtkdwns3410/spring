@@ -9,6 +9,9 @@ import spring.di.ui.GridExamConsole;
 import spring.di.ui.InlineExamConsole;
 
 import javax.crypto.ExemptionMechanism;
+import java.security.spec.ECField;
+import java.util.ArrayList;
+import java.util.List;
 
 public class program {
     public static void main(String[] args) {
@@ -25,5 +28,12 @@ public class program {
 //        ExamConsole console = (ExamConsole) context.getBean("console");
         ExamConsole console =  context.getBean(ExamConsole.class);
         console.print();
+    
+        List<Exam> exams = (List<Exam>) context.getBean("exams");
+//        exams.add(new NewlecExam(1, 1, 1, 1));
+    
+        for (Exam e : exams) {
+            System.out.println(e);
+        }
     }
 }
