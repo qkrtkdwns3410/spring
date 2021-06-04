@@ -1,11 +1,15 @@
 package spring.di.ui;
 
-import spring.di.entity.NewlecExam;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class GridExamConsole implements ExamConsole {
     private Exam exam;
     
     public GridExamConsole() {
+    }
+    
+    public GridExamConsole(Exam exam) {
+        this.exam = exam;
     }
     
     @Override
@@ -16,11 +20,8 @@ public class GridExamConsole implements ExamConsole {
     }
     
     @Override
+    @Autowired
     public void setExam(Exam exam) {
-        this.exam = exam;
-    }
-    
-    public GridExamConsole(Exam exam) {
         this.exam = exam;
     }
 }

@@ -1,10 +1,15 @@
 package spring.di.entity;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 import spring.di.ui.Exam;
+
 
 public class NewlecExam implements Exam {
     
+    @Value("20")
     private int kor;
+    @Value("30")
     private int eng;
     private int math;
     private int com;
@@ -54,10 +59,9 @@ public class NewlecExam implements Exam {
     }
     
     
-    
     @Override
     public int total() {
-        return kor+eng+math+com;
+        return kor + eng + math + com;
     }
     
     @Override
