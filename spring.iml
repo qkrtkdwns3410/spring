@@ -7,6 +7,7 @@
           <file>file://$MODULE_DIR$/src/main/java/spring/di/setting.xml</file>
           <file>file://$MODULE_DIR$/src/spring/di/setting.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/setting.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/setting_aop.xml</file>
         </fileset>
       </configuration>
     </facet>
