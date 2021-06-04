@@ -12,7 +12,7 @@
     
     <context:component-scan base-package="spring.di.ui , spring.di.entity"/>
     
-        <bean id="exam1" class="spring.di.entity.NewlecExam" p:kor="10" p:eng="20" p:math="40" p:com="30"/>
+<!--        <bean id="exam1" class="spring.di.entity.NewlecExam" p:kor="10" p:eng="20" p:math="40" p:com="30"/>-->
 <!--        <bean id="exam2" class="spring.di.entity.NewlecExam" p:kor="10" p:eng="30" p:math="40" p:com="30"/>-->
 
 
