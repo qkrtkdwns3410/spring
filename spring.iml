@@ -11,6 +11,7 @@
         </fileset>
         <fileset id="fileset2" name="SettingA" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/settingA.xml</file>
+          <file>file://$MODULE_DIR$/src/main/java/spring/di/NewlecDIConfig.java</file>
         </fileset>
       </configuration>
     </facet>
