@@ -12,7 +12,7 @@ import spring.di.entity.Exam;
 public class NewlecDIConfig {
     
     @Bean
-    public Exam exam() {
+    public Exam exam2() {
         return new NewlecExam();
     }
 }
